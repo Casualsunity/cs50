@@ -1,37 +1,44 @@
-Create a repo on github
-do not add a readme
-In c9, highlight the folder you wish to push to github and 
-right click open terminal here
 
-Within that terminal type `git init` enter,
-then `git add .` enter
+Zusammengefasst: wie man git benutzt.
+1.  clone repository from your git website: copy the ssh key first there
+2.  git clone git@github.com:Casualsunity/cs50.git
+    Cloning into 'cs50'...
+    Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+    warning: You appear to have cloned an empty repository.
+    Checking connectivity... done.
+3. check: git statuts
 
-Type in git commit -m "first commit" `git remote add origin` 
-whatever (copy it from github page),
-hit enter git push -u origin master, press enter then credentials. Done.
+4. move everything under the git verzeichnis
 
-This way you can have several github repo’s to push and pull from all 
-under one c9 project (per folder).
+5  git status: On branch master
 
+    Initial commit
 
+    Untracked files:
+    (use "git add <file>..." to include in what will be committed)
 
+        pset1/
+        pset2/
+        pset3/
+        pset4/
+        pset5/
+        pset6/
+        pset7/
+        pset8/
+        readme.txt
+        sqls/
+        zips/
 
-…or create a new repository on the command line
+    nothing added to commit but untracked files present (use "git add" to track
+    
+6. git add -A // Add everything
 
-echo "# cs50-ide" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/Casualsunity/repositoryNames.git(e.g.:https://github.com/Casualsunity/cs50-ide.git)
-git push -u origin master
+7. git commit -m "Alle bisherigen Arbeit bei cs50 psets wurde hochgeladen"
 
+8. before push alway pull first!
 
-…or push an existing repository from the command line
+9. git pull
 
-git remote add origin https://github.com/Casualsunity/cs50-ide.git
-git push -u origin master
+10. git push
 
-
-…or import code from another repository
-You can initialize this repository with code from a Subversion,
-Mercurial, or TFS project.
+done!
