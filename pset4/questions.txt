@@ -1,0 +1,50 @@
+0.  Farben PNG: 16.7 Mio.
+    Farben JPEG: 16.7 Mio.
+    Farben BMP: 16.7 Mio.
+    Farben GIF: 256
+1.  GIF
+
+2.  Informationsverlust
+
+3.  GIF
+
+4.  FAT stands for File Allocation Table and is linked list of disk clusters that DOS
+    uses to manage space on a random-access device.When the operating system erases a FAT file, two
+    things occur. First, the system modifies the filename’s first
+    character in the file’s directory entry to signal that the file
+    has been deleted and that the directory entry can be recycled.
+    Second, the system moves all of the file’s FAT clusters
+    to the hard drive’s list of free clusters. The actual file
+    data is never touched. Indeed, there are many programs
+    available that can recover erased files
+    
+5.  destroy the harddrive with a hammer.
+
+6.  stdint.h ist dafür da, um eine neue Datentype zu definieren, indem man die "Bit-Breite" definiert.
+
+7.  uint8_t:a unsign integer with 8 bits, uint32_t: unsign integer with 32 bits, int32_t signed integer with 32 bits, and uint16_t 
+
+8.  Byte: 1 Byte; DWORD: 4 Bytes: Long: 4 Bytes; WORD: 2 Bytes.
+
+9.  The Magic number of a bmp data is: Hex Digits: 42 4d ASCII:BM (http://www.astro.keele.ac.uk/oldusers/rno/Computing/File_magic.html)
+
+10. bfSize = biSizeImage + sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER)  
+    bfSize = biSizeImage + 54 // since BITMAPFILEHEADER = 40 and BITMAPINFOHEADER = 14 
+    biSizeImage = (biWidth * sizeof(RGBTRIPLE) + padding) * abs(biHeight) 
+    
+11. The height of the bitmap, in pixels. If biHeight is positive, the bitmap is a bottom-up DIB (Device-Independent Bitmaps)
+    and its origin is the lower-left corner. If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner.
+
+12. biBitCount specifies the BMP’s color depth.
+
+13. This line will return NULL, if the user didn't input the destination file.
+
+14. nmemb is number of the elements. 1 means to read each elements of the data.
+
+15. int padding =  (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4; padding = (4 -(3 * 4 % 3)%4 = (4-3*1)%4 = 1 ==> padding = 1 
+
+16. replaced the data pointer(cursor)
+
+17. seek_cur is current position of the file pointer
+
+18. TODO
